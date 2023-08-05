@@ -1,0 +1,20 @@
+<a href="/boards">Bulletin Board</a>
+<hr>
+<h1>All Boards</h1>
+<hr>
+<h2>Add board</h2>
+<form action="new_board" method = "post">
+<div><label for = "board_input">Name</label>
+<input id="board_input" type="Text" name="add_board"></div>
+<div>
+<button>Add board</button>
+</form>
+</div>
+<hr>
+<div>
+<ul>
+<% @list_of_boards.each do |the_board|%>
+  <li><a href = "/boards/<%=the_board.id%>"><%=the_board.name%></a></li>
+<% end%>
+</ul>
+</div>

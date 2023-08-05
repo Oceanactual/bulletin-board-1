@@ -1,0 +1,41 @@
+<a href="/">Bulletin Board</a>
+<hr>
+
+<h1></h1>
+<hr>
+
+<div>
+  <div>
+    <h2>
+      Add a new post
+    </h2>
+
+    <form action="/insert_board" method="post">
+      <div>
+        <label for="post_title">
+          Title
+        </label>
+
+        <input id="post_title" type="Text" name="the_post_title">
+      </div>
+        <div>
+        <label for="post_body">
+          Body
+        </label>
+
+        <textarea id="post_body" name="the_post_body"></textarea>
+      </div>     
+       <div>
+        <label for="post_expires">
+          Expires on
+        </label>
+
+        <input id="post_expires" name="the_post_expires" type="date" value="mm/dd/yyyy">
+      </div>
+
+      <button>
+        Add post
+      </button>
+    </form>
+  </div>
+</div>
